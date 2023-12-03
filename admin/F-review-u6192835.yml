@@ -1,0 +1,28 @@
+# Write your name and UID here.
+#
+reviewer:
+    name: Yubeng Liang
+    uid: u6192835
+
+# Write the name of the author of the code here.
+#
+author:
+    name: Baoyu Ma
+    uid: u6918231
+
+# Write the class or method being reviewed here.
+#
+component: <FocusGame.isPiecePlacementWellFormed> method and <Testfor6> class
+
+# Write a list of review comments here.
+# Sorry for the peculiar formatting, otherwise YAML would not pass it. Also, no format requirements were specified.
+comments:
+  - Features. Use if to judge the writing method. Test is a good idea, clever use of all the methods already given, by detecting whether the program can find out the deleted method to detect whether the program is correct and can find a way
+  - Document. The code is concise. The idea of test is a good solution to test task6
+  - Structure. Use if to judge and for loop
+  - Convention following. The code is concise and named correctly
+  - Potential error. 1. He should think about how to test the program if all the solutions are not given.
+  - 2.Notice he changed runtime to 10000, which means sometimes the test will run over 500ms, maybe he should optimize the test6
+
+
+

@@ -1,0 +1,27 @@
+# Write your name and UID here.
+#
+reviewer:
+    name: Baoyu Ma
+    uid: u6918231
+
+# Write the name of the author of the code here.
+#
+author:
+  name: Ra
+  uid: u6650903
+
+# Write the class or method being reviewed here.
+#
+component:  <FocusGame.getViablePiecePlacements> method
+
+# Write a list of review comments here.
+#
+comments:
+  - Features. <FocusGame.getViablePiecePlacements> method is a really good idea, especially when I try to use very complex way to solve the Task6. It is very helpful for me to write test for 6.And there are many other methods built into the cell class, which is also helpful for the completion of other tasks.
+  - Document. The code is clear and easy to understand, well structured, and has the necessary comments in key places for easy understanding
+  - Structure. Use for loop and if structure statement
+  - Convention following. Easy-to-understand naming, code is not redundant
+  - Potential error. It may still be necessary to optimize the method, but this will be designed into many other calling methods, but I think the optimization will further shorten the running time.
+
+
+

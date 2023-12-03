@@ -1,0 +1,40 @@
+# IMPORTANT: It is very important that you correctly complete this contribution
+# statement.
+ 
+declaration: >-
+  We declare that the work toward our submission of Stage C was distributed among the group members as follows:
+
+# State your contributions as integers out of 100. The total contribution should
+# be 100 or 99 (33/33/33 is fine).  (Remove entries if you have fewer than three
+# members).
+
+## 28 August 2019
+## According to the responsibilities chart:
+
+## Ra u6650903
+## Done task 5 and 6, and added some fields and methods in the classes that already been created
+## (doCellContradicts, encodeColour...). Helped Yubeng to solve tasks.
+
+## Yubeng u6192835
+## Done task 3 and 4, and added one method (decodeColour) in the class Cell.
+
+## Baoyu u6918231
+## Done task 2.
+
+contributions:
+  - uid: u6650903
+    contribution: 33
+  - uid: u6192835
+    contribution: 33
+  - uid: u6918231
+    contribution: 33
+
+# Sign *your* name and uids here. (Remove entries if you have fewer
+# than three members)
+signatures:
+  - name: Ra
+    uid: u6650903
+  - name: Yubeng
+    uid: u6192835
+  - name: Baoyu
+    uid: u6918231

@@ -1,0 +1,29 @@
+# Write your name and UID here.
+#
+reviewer:
+    name: Ra
+    uid: u6650903
+
+# Write the name of the author of the code here.
+#
+author:
+    name: Yubeng Liang
+    uid: u6192835
+
+# Write the class or method being reviewed here.
+#
+component: <AllChallenge.AllChallenge()> method and <Viewer.makePlacement(String placement)> method
+
+# Write a list of review comments here.
+# Sorry for the peculiar formatting, otherwise YAML would not pass it. Also, no format requirements were specified.
+comments:
+  - Features. AllChallenge.AllChallenge() code is generating all possible challenges for the game. I noticed efficient using of nested for loops and thoughtful initialisation of local variables. Method is using FocusGame.getSolutions(String challenge) which is quite time consuming process. Therefore clever using of the local variables becomes crucial. Well chosen data structure for storing challenges and solutions. Found solutions is properly recorded in the class public property. Method properly uses solution finding method. Viewer.makePlacement(String placement) method, even it is not ended up finished fully operational, was featured with an efficient approach to game graphics. Namely it was using drawn coloured rectangles to display tiles on the board instead of supplied tile photo pictures. This inspired me and I decided to reject my initial intention to use photos of the tiles. Eventually I used this approach to implement the game graphics.
+  - Document. Code is documented in clear and readable fashion, so I was able easily make adjustments for my testing purposes and understand what calculation is being implemented. Comments are added as necessary and give the general idea of what the part of code is doing.
+  - Structure. Code of the methods is written in natural logical manner and allows reader to follow distinct steps easily. Well-chosen operations' order. Good structure allows easy maintenance and fast understanding of the process.
+  - Convention following. Conventions were followed in the methods, i.e. spacing around operators and names chosen to make sense and help to understand the code. Including but not limited to name Camel-case convention was also followed, and for loops indenting and bracing convention were closely followed. However, Yubeng used operator "<=" in "for loop" index, not according to convention of using "<".
+  - Potential error. The method calls and uses results of Cell.decodeColour() method and  FocusGame.getSolutions(String challenge). If there is an error in those method return parameters it might cause the error because the return values are not checked if they make any sense. For example if solution or colour is returned with mistake it would cause the correctness of the whole solutions library. However, because the results are tested by another test  class it does not entail any problems.
+
+
+
+
+
