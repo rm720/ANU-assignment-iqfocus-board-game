@@ -1,5 +1,70 @@
 # COMP1110 Assignment 2
 
+## How to run
+Read ANU instructions.
+https://comp.anu.edu.au/courses/comp1110/help/software/#download-centre
+https://comp.anu.edu.au/courses/comp1110/assessments/deliverables/#D2D
+
+Alternatively, here is a short version:
+
+Install IntelliJ Idea - 2022.3.3 <br>
+Install JDK - 17 <br>
+JavaFX SDK - 17 <br>
+Create environmental variables:
+```sh
+export PATH=/Library/Java/JavaVirtualMachines/[CHANGEME]/Contents/Home/bin:$PATH
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/[CHANGEME]/Contents/Home
+export PATH_TO_FX=/Library/Java/JavaFX/[CHANGEME]/lib
+```
+Notice the [CHANGEME] part. You need to replace it with the actual path you have on your system. It might look like jdk-17.0.6 for JDK and javafx-sdk-17.0.6 for the JavaFX SDK.
+
+Reload zshrc
+```shell
+source ~/.zshrc
+```
+You will also need to set the PATH_TO_FX variable in IntelliJ Idea. To do this, open IntelliJ Idea and select File -> Settings... -> Appearance and Behavior -> Path Variables and then add a new path variable (select the plus sign) with name PATH_TO_FX and value equal to the path to your JavaFX installation lib directory, as we did before.
+
+Verify the version of your installation by typing 
+```sh
+java -version
+```
+Package the program as a JAR file called game.jar.
+
+1. Select File->Project Structure.
+2. Select “Artifacts”
+3. Add a JAR: “+” -> JAR -> From modules with dependencies…
+4. Select the “Main class” to be your Game class, and ensure “extract to target JAR” is selected
+5. Ensure the “Directory for META-INF/MANIFEST.MF” is set to your src subdirectory.
+6. Press “OK”
+7. Changed the “Name” to game.
+8. Ensure the “Output directory” is the subdirectory out/artifacts/game relative to the project root.
+9. Check the “Include in project build” checkbox.
+10. Change the file name by selecting the JAR at middle of window, under “Output layout”, and right click, “Rename”, then type game.jar
+11. Press “OK”
+12. Build game JAR: Build -> Build Artifacts…, select build.
+13. Use git to commit the .idea/artifacts/game.xml and src/META-INF/MANIFEST.MF files (do not include “out/artifacts/game/game.jar” in version control).
+
+Add JUnit4
+
+From the top menu select:
+File -> Project Structure -> Libraries -> press + -> From Maven
+Type:
+junit4
+Select junit4.12.0
+press "ok"
+press "Reload"
+press "apply"
+press "ok"
+
+in IntelliJ from the top menu select:
+Build -> Build project
+
+On the top right select Board and the press "Run"
+Enjoy the game.
+
+
+
+
 ## Academic Honesty and Integrity
 
 Honesty and integrity are of utmost importance. These goals are *not* at odds with being resourceful and working collaboratively. You *should* be resourceful, you should collaborate within your team, and you should discuss the assignment and other aspects of the course with others taking the class. However, *you must never misrepresent the work of others as your own*. If you have taken ideas from elsewhere or used code sourced from elsewhere, you must say so with *utmost clarity*. At each stage of the assignment you will be asked to submit a statement of originality, either as a group or as individuals. This statement is the place for you to declare which ideas or code contained in your submission were sourced from elsewhere.
